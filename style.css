@@ -13,7 +13,7 @@ body{
     gap:3rem 1rem;
     padding:3rem 0;
     margin:0 1.5rem;
-    border-top: 4px solid #c7c6c6;
+    border-top: 4px solid #888686;
 }
 
 .video-section:first-child{
@@ -22,7 +22,7 @@ body{
 .videos{
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 237, 237);
+    background-color: rgb(245, 245, 245);
 }
 .thumbnail{
  
@@ -48,6 +48,7 @@ body{
     width: 100%;
     min-width: 250px;
     min-height: 150px;
+    max-height: 240px;
     background-color: #aaa;
 }
 .video-bottom-section{
@@ -227,9 +228,8 @@ background-color: #aaa;
        }
        
    }
-   
-   @media  (max-width:500px){
-       .categories{
+@media(max-width : 500px){
+    .categories{
         padding:.5rem 1rem;
         font-size: .7rem;
         color:rgb(65, 64, 64);
@@ -238,20 +238,20 @@ background-color: #aaa;
        .category{
            padding: .3rem .5rem;
        }
-   }
+    .menu-icon {
+        display: grid;
+        gap:0.2 rem;
+        grid-template-columns: repeat(5,10px);
+        align-items: center;
+        
+      }
+      .youtube-logo{
+          width: 3rem;
+          height: 1.5rem;
+      }
 
-  @media (max-width:500) {
-    .thumbnail-image{
-        height: 100%;
-        width: 100%;
-        min-width: 200px;
-        min-height: 120px;
-        background-color: #aaa;
-    }
+
 }
-
-
-
 
 
 
