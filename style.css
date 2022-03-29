@@ -67,6 +67,7 @@ background-color: #aaa;
     display: flex;
     flex-direction: column;
     
+    
 }
 .video-title{
     font-weight: bold;
@@ -149,6 +150,7 @@ background-color: #aaa;
         width:6rem;
         height:30px;
     }
+    
 
     .header{
      
@@ -191,7 +193,7 @@ background-color: #aaa;
     .menu-icon {
       display: grid;
       gap: 1.5em;
-      grid-template-columns: repeat(4,auto);
+      grid-template-columns: repeat(5,auto);
       align-items: center;
       
     }
@@ -205,8 +207,45 @@ background-color: #aaa;
        cursor: pointer;
         
     }
-    .search-button:hover{
-        background-color: rgb(233, 233, 233);
+    @media(max-width: 900px){
+        .search-bar{
+            display: none;
+        }
     }
-
     
+    .search{
+        display: none;
+    }
+   @media(max-width: 900px) {
+       .search{
+           display: grid;
+       }
+       
+   }
+   
+   @media  (max-width:500px){
+       .categories{
+        padding:.5rem 1rem;
+        font-size: .7rem;
+
+       }
+       .category{
+           padding: .3rem .5rem;
+       }
+   }
+
+  @media (max-width:500) {
+    .thumbnail-image{
+        height: 100%;
+        width: 100%;
+        min-width: 200px;
+        min-height: 120px;
+        background-color: #aaa;
+    }
+}
+
+
+
+
+
+
