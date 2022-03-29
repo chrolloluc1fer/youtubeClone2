@@ -207,6 +207,9 @@ background-color: #aaa;
        cursor: pointer;
         
     }
+    .search-button:hover{
+        background-color: rgb(195, 195, 195);
+    }
     @media(max-width: 900px){
         .search-bar{
             display: none;
